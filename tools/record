@@ -1,0 +1,79 @@
+#8.30
+LR = 0.0001
+EPOCHS = 25
+BATCH_SIZE = 32
+Epoch 1/25
+93/94 [============================>.] - ETA: 1s - loss: 1.6780 - acc: 0.4126Epoch 00000: val_acc improved from -inf to 0.47524, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 420s - loss: 1.6786 - acc: 0.4126 - val_loss: 1.5198 - val_acc: 0.4752
+Epoch 2/25
+93/94 [============================>.] - ETA: 1s - loss: 1.4806 - acc: 0.4877Epoch 00001: val_acc improved from 0.47524 to 0.52252, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 393s - loss: 1.4821 - acc: 0.4875 - val_loss: 1.4159 - val_acc: 0.5225
+Epoch 3/25
+93/94 [============================>.] - ETA: 1s - loss: 1.3854 - acc: 0.5271Epoch 00002: val_acc improved from 0.52252 to 0.55122, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 391s - loss: 1.3871 - acc: 0.5261 - val_loss: 1.3242 - val_acc: 0.5512
+Epoch 4/25
+93/94 [============================>.] - ETA: 1s - loss: 1.3157 - acc: 0.5526Epoch 00003: val_acc improved from 0.55122 to 0.58335, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 390s - loss: 1.3160 - acc: 0.5528 - val_loss: 1.2402 - val_acc: 0.5833
+Epoch 5/25
+93/94 [============================>.] - ETA: 1s - loss: 1.2177 - acc: 0.5777Epoch 00004: val_acc improved from 0.58335 to 0.59300, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 388s - loss: 1.2187 - acc: 0.5766 - val_loss: 1.1658 - val_acc: 0.5930
+Epoch 6/25
+93/94 [============================>.] - ETA: 1s - loss: 1.1554 - acc: 0.5942Epoch 00005: val_acc improved from 0.59300 to 0.61059, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 388s - loss: 1.1571 - acc: 0.5932 - val_loss: 1.0947 - val_acc: 0.6106
+Epoch 7/25
+93/94 [============================>.] - ETA: 1s - loss: 1.0917 - acc: 0.6154Epoch 00006: val_acc improved from 0.61059 to 0.64263, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 1.0910 - acc: 0.6158 - val_loss: 1.0381 - val_acc: 0.6426
+Epoch 8/25
+93/94 [============================>.] - ETA: 1s - loss: 1.0432 - acc: 0.6279Epoch 00007: val_acc improved from 0.64263 to 0.66080, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 1.0444 - acc: 0.6275 - val_loss: 0.9865 - val_acc: 0.6608
+Epoch 9/25
+93/94 [============================>.] - ETA: 1s - loss: 0.9748 - acc: 0.6574Epoch 00008: val_acc improved from 0.66080 to 0.68917, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.9725 - acc: 0.6591 - val_loss: 0.9298 - val_acc: 0.6892
+Epoch 10/25
+93/94 [============================>.] - ETA: 1s - loss: 0.9538 - acc: 0.6656Epoch 00009: val_acc improved from 0.68917 to 0.70083, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.9512 - acc: 0.6678 - val_loss: 0.8740 - val_acc: 0.7008
+Epoch 11/25
+93/94 [============================>.] - ETA: 1s - loss: 0.8611 - acc: 0.7023Epoch 00010: val_acc improved from 0.70083 to 0.73353, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.8606 - acc: 0.7015 - val_loss: 0.8241 - val_acc: 0.7335
+Epoch 12/25
+93/94 [============================>.] - ETA: 1s - loss: 0.8334 - acc: 0.7250Epoch 00011: val_acc improved from 0.73353 to 0.75971, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.8331 - acc: 0.7253 - val_loss: 0.7810 - val_acc: 0.7597
+Epoch 13/25
+93/94 [============================>.] - ETA: 1s - loss: 0.7873 - acc: 0.7292Epoch 00012: val_acc improved from 0.75971 to 0.79045, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.7850 - acc: 0.7304 - val_loss: 0.7326 - val_acc: 0.7904
+Epoch 14/25
+93/94 [============================>.] - ETA: 1s - loss: 0.7329 - acc: 0.7656Epoch 00013: val_acc improved from 0.79045 to 0.80360, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.7314 - acc: 0.7671 - val_loss: 0.6922 - val_acc: 0.8036
+Epoch 15/25
+93/94 [============================>.] - ETA: 1s - loss: 0.7039 - acc: 0.7821Epoch 00014: val_acc improved from 0.80360 to 0.82303, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.7024 - acc: 0.7825 - val_loss: 0.6499 - val_acc: 0.8230
+Epoch 16/25
+93/94 [============================>.] - ETA: 1s - loss: 0.6408 - acc: 0.8143Epoch 00015: val_acc improved from 0.82303 to 0.82980, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.6395 - acc: 0.8146 - val_loss: 0.6124 - val_acc: 0.8298
+Epoch 17/25
+93/94 [============================>.] - ETA: 1s - loss: 0.6213 - acc: 0.8173Epoch 00016: val_acc improved from 0.82980 to 0.83761, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 389s - loss: 0.6214 - acc: 0.8172 - val_loss: 0.5771 - val_acc: 0.8376
+Epoch 18/25
+93/94 [============================>.] - ETA: 1s - loss: 0.5816 - acc: 0.8341Epoch 00017: val_acc improved from 0.83761 to 0.84576, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 387s - loss: 0.5798 - acc: 0.8352 - val_loss: 0.5519 - val_acc: 0.8458
+Epoch 19/25
+93/94 [============================>.] - ETA: 1s - loss: 0.5580 - acc: 0.8448Epoch 00018: val_acc improved from 0.84576 to 0.85511, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 387s - loss: 0.5585 - acc: 0.8448 - val_loss: 0.5250 - val_acc: 0.8551
+Epoch 20/25
+93/94 [============================>.] - ETA: 1s - loss: 0.5143 - acc: 0.8533Epoch 00019: val_acc improved from 0.85511 to 0.87057, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 386s - loss: 0.5148 - acc: 0.8528 - val_loss: 0.4943 - val_acc: 0.8706
+Epoch 21/25
+93/94 [============================>.] - ETA: 1s - loss: 0.4907 - acc: 0.8670Epoch 00020: val_acc improved from 0.87057 to 0.87843, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 389s - loss: 0.4893 - acc: 0.8678 - val_loss: 0.4738 - val_acc: 0.8784
+Epoch 22/25
+93/94 [============================>.] - ETA: 1s - loss: 0.4789 - acc: 0.8730Epoch 00021: val_acc improved from 0.87843 to 0.88963, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 387s - loss: 0.4774 - acc: 0.8744 - val_loss: 0.4448 - val_acc: 0.8896
+Epoch 23/25
+93/94 [============================>.] - ETA: 1s - loss: 0.4246 - acc: 0.8868Epoch 00022: val_acc did not improve
+94/94 [==============================] - 385s - loss: 0.4258 - acc: 0.8873 - val_loss: 0.4368 - val_acc: 0.8839
+Epoch 24/25
+93/94 [============================>.] - ETA: 1s - loss: 0.4350 - acc: 0.8774Epoch 00023: val_acc improved from 0.88963 to 0.89213, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 387s - loss: 0.4333 - acc: 0.8784 - val_loss: 0.4203 - val_acc: 0.8921
+Epoch 25/25
+93/94 [============================>.] - ETA: 1s - loss: 0.4042 - acc: 0.8895Epoch 00024: val_acc improved from 0.89213 to 0.89969, saving model to /usr/kaggle/fish/weights.h5
+94/94 [==============================] - 390s - loss: 0.4023 - acc: 0.8907 - val_loss: 0.3922 - val_acc: 0.8997
