@@ -3,6 +3,8 @@ from PIL import Image
 from shutil import copyfile
 import re
 from predict_fish import predict_imgs
+from keras import backend as K
+import tensorflow as tf
 
 
 def func():
@@ -16,6 +18,7 @@ def func():
         for img in imgs:
             f.write(os.path.join(img_path, img) + '\n')
     f.close()
+
     os.system("cd /usr/kaggle/kaggle/darknet; ./darknet detector test cfg/"
               "voc.data cfg/yolov3-voc.cfg weights/yolov3-voc_7000.weights -ext_output < test.txt > result.txt")
 
@@ -77,6 +80,7 @@ def func():
     f_submit.truncate()
     # f_submit.write('image,ALB,BET,DOL,LAG,NoF,OTHER,SHARK,YFT\n')
     f_submit.close()
+
     num_cls = len(os.listdir("/home/yuanye/backend/cropped_imgs/cls/test_cls"))
     if num_cls > 0:
         pre = predict_imgs(False, num_cls)

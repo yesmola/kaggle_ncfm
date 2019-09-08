@@ -2,6 +2,8 @@ from keras.models import load_model
 import os
 import sys
 from keras.preprocessing.image import ImageDataGenerator
+from keras import backend as K
+import tensorflow as tf
 
 
 # weights = True: full image ;False: cropped image
@@ -29,6 +31,8 @@ def predict_imgs(weights, num):
 
     test_image_list = test_generator.filenames
 
+    K.clear_session()
+
     if weights:
         inception_v3_model = load_model('/home/yuanye/fish_data/weights_wy.h5')
     else:
@@ -42,4 +46,8 @@ def predict_imgs(weights, num):
         f_submit.write('%s,%s\n' % (os.path.basename(image_name), ','.join(pred)))
 
     f_submit.close()
+
+    K.clear_session()
+    tf.reset_default_graph()
+
     return pred

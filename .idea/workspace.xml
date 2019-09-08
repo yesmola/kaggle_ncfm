@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b946c6c3-ec0c-45d2-b3c5-dc1b1ca10fc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/document.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/recognize.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/upload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jquery-1.11.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predict_fish.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict_fish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,6 +205,8 @@
       <workItem from="1567912602638" duration="6000" />
       <workItem from="1567912734897" duration="3426000" />
       <workItem from="1567925900464" duration="6792000" />
+      <workItem from="1567934581851" duration="81000" />
+      <workItem from="1567956600608" duration="3059000" />
     </task>
     <task id="LOCAL-00001" summary="add backend">
       <created>1567917153801</created>
@@ -224,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567917153801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add html">
+      <created>1567934627004</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567934627004</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +244,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="add backend" />
+    <MESSAGE value="add html" />
+    <option name="LAST_COMMIT_MESSAGE" value="add html" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kaggle_ncfm$img_numbers__1_.coverage" NAME="img_numbers (1) Coverage Results" MODIFIED="1567750647109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
