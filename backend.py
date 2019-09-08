@@ -73,23 +73,24 @@ def func():
             continue
         line_id += 1
 
-    f.close()
-
-    # os.system("rm /home/yuanye/backend/ori_imgs/*")
-
     f_submit = open('/home/yuanye/backend/results.csv', 'w')
     f_submit.truncate()
-    f_submit.write('image,ALB,BET,DOL,LAG,NoF,OTHER,SHARK,YFT\n')
+    # f_submit.write('image,ALB,BET,DOL,LAG,NoF,OTHER,SHARK,YFT\n')
     f_submit.close()
     num_cls = len(os.listdir("/home/yuanye/backend/cropped_imgs/cls/test_cls"))
     if num_cls > 0:
-        predict_imgs(False, num_cls)
+        pre = predict_imgs(False, num_cls)
+        os.system("rm /home/yuanye/backend/cropped_imgs/cls/test_cls/*")
 
     num_full = len(os.listdir("/home/yuanye/backend/cropped_imgs/full/test_cls2"))
     if num_full > 0:
-        predict_imgs(True, num_full)
+        pre = predict_imgs(True, num_full)
+        os.system("rm /home/yuanye/backend/cropped_imgs/full/test_cls2/*")
+
+    return pre
 
 
 if __name__ == '__main__':
-    func()
+    print(func())
+
 

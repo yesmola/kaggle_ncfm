@@ -42,4 +42,4 @@ def predict_imgs(weights, num):
         f_submit.write('%s,%s\n' % (os.path.basename(image_name), ','.join(pred)))
 
     f_submit.close()
-    return
+    return pred

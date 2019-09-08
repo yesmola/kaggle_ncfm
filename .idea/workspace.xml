@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b946c6c3-ec0c-45d2-b3c5-dc1b1ca10fc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict_fish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/document.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/recognize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/home2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/intro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inception_v3/predict_inceptionV3_userfiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/inception_v3/predict_inceptionV3_userfiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict_inceptionV3_aug.py" beforeDir="false" afterPath="$PROJECT_DIR$/inception_v3/predict_inceptionV3_aug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/create_total_submit.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/create_total_submit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict_fish.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict_fish.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,14 +46,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/inception_v3" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/tools" />
-      <recent name="$PROJECT_DIR$/preprocess" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/useful" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/inception_v3" />
+      <recent name="$PROJECT_DIR$/tools" />
+      <recent name="$PROJECT_DIR$/preprocess" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -59,28 +69,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.backend">
-    <configuration name="backend (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="kaggle_ncfm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="/usr/kaggle/kaggle/darknet" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="/usr/kaggle/kaggle/darknet/backend.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="backend" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kaggle_ncfm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,6 +83,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flask" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kaggle_ncfm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,10 +182,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.backend" />
+        <item itemvalue="Python.flask" />
         <item itemvalue="Python.pre_cls" />
         <item itemvalue="Python.pre_full" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.backend (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -204,8 +214,17 @@
       <workItem from="1567861357005" duration="6108000" />
       <workItem from="1567867477646" duration="1358000" />
       <workItem from="1567912602638" duration="6000" />
-      <workItem from="1567912734897" duration="2794000" />
+      <workItem from="1567912734897" duration="3426000" />
+      <workItem from="1567925900464" duration="6792000" />
     </task>
+    <task id="LOCAL-00001" summary="add backend">
+      <created>1567917153801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567917153801</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +245,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="add backend" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kaggle_ncfm$img_numbers__1_.coverage" NAME="img_numbers (1) Coverage Results" MODIFIED="1567750647109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
@@ -235,7 +256,7 @@
     <SUITE FILE_PATH="coverage/kaggle_ncfm$sort_csv.coverage" NAME="sort_csv Coverage Results" MODIFIED="1567773615164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/kaggle_ncfm$img_numbers.coverage" NAME="img_numbers Coverage Results" MODIFIED="1567698136320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/useful" />
     <SUITE FILE_PATH="coverage/kaggle_ncfm$rotate_augmentation.coverage" NAME="rotate_augmentation Coverage Results" MODIFIED="1567750570053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess" />
-    <SUITE FILE_PATH="coverage/kaggle_ncfm$backend.coverage" NAME="backend Coverage Results" MODIFIED="1567916994161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_ncfm$backend.coverage" NAME="backend Coverage Results" MODIFIED="1567928979289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_ncfm$predict_inceptionV3.coverage" NAME="predict_inceptionV3 Coverage Results" MODIFIED="1567779067326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_ncfm$create_total_submit.coverage" NAME="create_total_submit Coverage Results" MODIFIED="1567854517996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_ncfm$backend__1_.coverage" NAME="backend (1) Coverage Results" MODIFIED="1567864126286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/usr/kaggle/kaggle/darknet" />
@@ -245,5 +266,6 @@
     <SUITE FILE_PATH="coverage/kaggle_ncfm$train_inceptionV3.coverage" NAME="train_inceptionV3 Coverage Results" MODIFIED="1567783765808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_ncfm$pre_full.coverage" NAME="pre_full Coverage Results" MODIFIED="1567913991893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_ncfm$pre_cls.coverage" NAME="pre_cls Coverage Results" MODIFIED="1567916779118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_ncfm$flask.coverage" NAME="flask Coverage Results" MODIFIED="1567927747973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

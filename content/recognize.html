@@ -1,0 +1,45 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="../js.js"></script>
+  <title>Recognize</title>
+</head>
+
+<body>
+
+  <div>
+    <div id="top">
+      <!-- <a href=""><img id="logo" src="img/logo.png"></a> -->
+        <div id="lis1">
+            <ul>
+              <li><a href="../home.html" >Home</a></li>
+              <li><a href="document.html" >Documents</a></li>
+              <li><a href="recognize.html" >Recognize</a></li>
+              <li><a href="" >About</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+
+    <h4 style="margin-left: 5%; margin-top:40px;"> Picture preview : </h4>
+    <div id="test-image-preview"></div>
+    <div>
+        <form action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">
+          <label class="btn">
+            <span>Choose</span>
+            <input type="file" id="test-image-file" name="file" accept="image/gif, image/jpeg, image/png, image/jpg">
+          </label>
+          <button class="btn">Submit</button>
+        </form>
+    </div>
+        
+    <br><br>
+
+  <div id="foot">
+	<span>Copyright © GKXGKD 2019. All rights reserved.</span>
+  </div>
+
+</body>
+</html>
