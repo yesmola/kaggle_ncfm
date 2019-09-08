@@ -15,9 +15,9 @@ FishNames = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
 
 root_path = '/home/yuanye/fish_data'
 
-weights_path = os.path.join(root_path, 'weights_crop.h5')
+weights_path = os.path.join(root_path, 'weights_wy.h5')
 
-test_data_dir = os.path.join(root_path, 'test2/')
+test_data_dir = os.path.join(root_path, 'test4/')
 
 # test data generator for prediction
 test_datagen = ImageDataGenerator(
@@ -56,7 +56,7 @@ for idx in range(nbr_augmentation):
 predictions /= nbr_augmentation
 
 print('Begin to write submission file ..')
-f_submit = open(os.path.join(root_path, 'submit2_cls_aug.csv'), 'w')
+f_submit = open(os.path.join(root_path, 'submit2_full_aug.csv'), 'w')
 f_submit.write('image,ALB,BET,DOL,LAG,NoF,OTHER,SHARK,YFT\n')
 for i, image_name in enumerate(test_image_list):
     pred = ['%.6f' % p for p in predictions[i, :]]
