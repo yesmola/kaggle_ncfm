@@ -1,0 +1,116 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Nature Conservancy Fisheries Monitoring</title>
+</head>
+
+<body>
+
+  <div>
+    <div id="top">
+      <!-- <a href=""><img id="logo" src="img/logo.png"></a> -->
+        <div id="lis1">
+            <ul>
+              <li><a href="" >Home</a></li>
+              <li><a href="" >Documents</a></li>
+              <li><a href="" >Recognize</a></li>
+              <li><a href="" >About</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-10" style="margin-left: 40%;">
+    <h2>Recognize Result</h2>
+  </div>
+
+  <div>
+    <table class="table">
+      <tr>
+        <td class="type">ALB</td>
+        <td><canvas id="mc1" class="canvas"></canvas></td>
+      </tr>
+      <tr>
+        <td class="type">BET</td>
+        <td><canvas id="mc2" class="canvas"></canvas></td>
+      </tr>
+      <tr>
+        <td class="type">DOL</td>
+        <td><canvas id="mc3" class="canvas"></canvas></td>
+      </tr>
+      <tr>
+        <td class="type">LAG</td>
+        <td><canvas id="mc4" class="canvas"></canvas></td>
+      </tr>
+      <tr>
+        <td class="type">NoF</td>
+        <td><canvas id="mc5" class="canvas"></canvas></td>
+      </tr>
+      <tr>
+        <td class="type">OTHER</td>
+        <td><canvas id="mc6" class="canvas"></canvas></td>
+      </tr>
+      <tr>
+        <td class="type">SHARK</td>
+        <td><canvas id="mc7" class="canvas"></canvas></td>
+      </tr>
+      <tr>
+        <td class="type">YFT</td>
+        <td><canvas id="mc8" class="canvas"></canvas></td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+
+    var c1=document.getElementById("mc1");
+    var ctx1=c1.getContext("2d");
+    ctx1.fillStyle="rgb(120,194,196)";
+    ctx1.fillRect(0,35,300*{{t1}},80);
+
+    var c2=document.getElementById("mc2");
+    var ctx2=c2.getContext("2d");
+    ctx2.fillStyle="rgb(120,194,196)";
+    ctx2.fillRect(0,35,300*{{t2}},80);
+
+    var c3=document.getElementById("mc3");
+    var ctx3=c3.getContext("2d");
+    ctx3.fillStyle="rgb(120,194,196)";
+    ctx3.fillRect(0,35,300*{{t3}},80);
+
+    var c4=document.getElementById("mc4");
+    var ctx4=c4.getContext("2d");
+    ctx4.fillStyle="rgb(120,194,196)";
+    ctx4.fillRect(0,35,300*{{t4}},80);
+
+    var c5=document.getElementById("mc5");
+    var ctx5=c5.getContext("2d");
+    ctx5.fillStyle="rgb(120,194,196)";
+    ctx5.fillRect(0,35,300*{{t5}},80);
+
+    var c6=document.getElementById("mc6");
+    var ctx6=c6.getContext("2d");
+    ctx6.fillStyle="rgb(120,194,196)";
+    ctx6.fillRect(0,35,300*{{t6}},80);
+
+    var c7=document.getElementById("mc7");
+    var ctx7=c7.getContext("2d");
+    ctx7.fillStyle="rgb(120,194,196)";
+    ctx7.fillRect(0,35,300*{{t7}},80);
+
+    var c8=document.getElementById("mc8");
+    var ctx8=c8.getContext("2d");
+    ctx8.fillStyle="rgb(120,194,196)";
+    ctx8.fillRect(0,35,300*{{t8}},80);
+      
+  </script>
+
+
+  <div id="foot">
+		<span>Copyright © GKXGKD 2019. All rights reserved.</span>
+	</div>
+
+</body>
+</html>

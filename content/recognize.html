@@ -1,8 +1,34 @@
 <html>
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="../css.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="../js.js"></script>
+  <script>
+    function loadData()
+    {
+      var xmlhttp;
+      if (window.XMLHttpRequest)
+      {
+        //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+        xmlhttp=new XMLHttpRequest();
+      }
+      else
+      {
+        // IE6, IE5 浏览器执行代码
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange=function()
+      {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+          document.getElementById("change_data").innerHTML=xmlhttp.responseText;
+        }
+      }
+      xmlhttp.open("GET", "test.txt" ,true);
+      xmlhttp.send();
+    }
+  </script>
   <title>Recognize</title>
 </head>
 
@@ -16,7 +42,7 @@
               <li><a href="../home.html" >Home</a></li>
               <li><a href="document.html" >Documents</a></li>
               <li><a href="recognize.html" >Recognize</a></li>
-              <li><a href="" >About</a></li>
+              <li><a href="about.html" >About</a></li>
             </ul>
         </div>
     </div>
@@ -31,10 +57,11 @@
             <span>Choose</span>
             <input type="file" id="test-image-file" name="file" accept="image/gif, image/jpeg, image/png, image/jpg">
           </label>
-          <button class="btn">Submit</button>
+          <button class="btn" onclick="loadData()">Submit</button>
         </form>
     </div>
         
+
     <br><br>
 
   <div id="foot">

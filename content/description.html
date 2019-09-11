@@ -1,0 +1,221 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="../js.js"></script>
+    <title>Documents-Description</title>
+</head>
+
+<body>
+
+<div>
+    <div id="top">
+        <!-- <a href=""><img id="logo" src="img/logo.png"></a> -->
+        <div id="lis1">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="document.html">Documents</a></li>
+                <li><a href="recognize.html">Recognize</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-2">
+        <!-- <h2 style="text-align: center; color: gray;">Index</h2> -->
+        <div class="index" style="padding: 68px 25px 0px 0px;">
+            <ul>
+                <li><a href="document.html" class="default">Intro</a></li>
+                <li><a href="#" class="select">Description</a></li>
+                <li><a href="data.html" class="default">Data</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-10">
+        <h1><strong>The Nature Conservancy Fisheries Monitoring</strong></h1>
+        <br/>
+        <p>你能识别并将鱼分类吗？</p>
+        <p>​本次小学期，我们小组五人（王岩、袁野、龚凯雄、仇中豪、李锡铭）完成了马锐老师安排的一项任务——<strong>基于Kaggle数据集的数据分析</strong>——<a
+                href="https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring">Nature Conservancy Fisheries
+            Monitoring Competition</a>。<br/>这是一个关于将在渔船上拍摄的照片进行分类的任务，其最终奖金数目高达150000美金。
+            这是我们五人第一次参加Kaggle比赛，即使这个比赛目前已经关闭，但是仍然让我们在人工智能、图像识别等方面有了进一步的理解与认识。
+        </p>
+        <br/>
+        <h2><strong>Problem statement</strong></h2>
+        <p>​ 世界上近一半的人将海洋食品作为他们的主要蛋白质来源。在西太平洋和中太平洋地区，世界上<strong>60%</strong>的金枪鱼被非法捕捞。
+            非法的、未报告和无管制的捕捞活动正在威胁着海洋生态系统、全球海洋食品供应以及当地的生态环境。大自然保护协会(<strong>The
+                Nature Conservancy</strong>)正与当地、区域以及全球的合作伙伴合作，以保护未来的渔业。</p>
+        <p>​ 目前，协会期望通过使用相机大幅度扩大对捕捞活动的监测，来填补相关的监测数据空白。尽管获取原始数据有各种途径，
+            但是手工处理原始数据仍然是一项十分耗时耗力的工作。</p>
+        <p>​ 这也就是为什么该协会尝试与Kaggle社区进行合作，寻求自动检测并对鱼的品种进行分类。
+            这将加速视频审查过程，而更快的审查和更可靠的数据能够使各国重新分配人力资源，提升监管效果，而更重要的是，这将会保护我们赖以生存的地球。</p>
+
+        <br/>
+        <h2><strong>Dataset</strong></h2>
+        <p>​ 训练数据集包括了3792张图片，而第一阶段的测试集包括1000张图片。本次比赛原本包括两个阶段：第一阶段是公开的测试集，所有队伍都可以获得阶段一的1000
+            张图片，各参赛队伍将预测结果按照指定格式提交；而第二阶段在比赛进行期间没有提供给参赛队伍，参赛队伍需要将自己的模型或算法提交，由Kaggle运行程序后得
+            出结果并进行评价。而我们的目标，就是训练一个模型来进行检测并将鱼的品种分为8个类别：</p>
+        <ul>
+            <li>Albacore Tuna(长鳍金枪鱼)</li>
+            <li>Bigeye Tuna(大眼金枪鱼)</li>
+            <li>Dolphinfish(鲯鳅)</li>
+            <li>Moonfish(月亮鱼)</li>
+            <li>Shark(鲨鱼)</li>
+            <li>Yellowfin Tuna(黄鳍金枪鱼)</li>
+            <li>Others(其他种类)</li>
+            <li>No Fish(没有鱼)</li>
+        </ul>
+        <p>下图展示了一些图片的例子(鱼用红色包围框圈出)：</p>
+
+        <figure>
+            <img src="../img/redbox.jpg"> </img>
+        </figure>
+
+        <p>​ 而由于这个比赛现在已经截止，所以两个阶段的测试数据都已经放在了网站上，包括第一阶段1000张，第二阶段12153张。
+            而比赛的评判也从第一阶段提交分类结果、第二阶段提交模型变成了两阶段同时评测分类结果。</p>
+        <p>​ 本次比赛将使用多种类对数损失(multi-class logarithmic loss)评价，每个图像都标有一个正确的类，对于每个图像都需要提交一组预测的概率。
+            概率公式是：</p>
+        <figure>
+            <img src="../img/formula.jpg"> </img>
+        </figure>
+
+        <p>​ N表示测试集中的图片数量，M表示图像的种类，log表示自然对数。如果图片i属于第j类，那么yij为，其他为0。pij表示预测i属于j类的概率。</p>
+
+        <br/>
+
+        <h2><strong>exploration</strong></h2>
+
+        <p>​ 在运行一些简单的脚本之后，我们很快发现在这次比赛的数据中存在一些方面让这次的比赛变得很具有挑战性。</p>
+
+        <h3>1)种类分布非常不平衡</h3>
+
+        <figure>
+            <img src="../img/zhifangtu.jpg"> </img>
+        </figure>
+        <p>​ 从上面的种类分布直方图，我们可以很清楚的看到，“ALB";种类一共有1719个样本，占据了整个数据集的45%，
+            然而“LAG”和“DOL”分别只有67和117个样本。最终，我们的模型在识别这些种类的时候会出现一些麻烦。</p>
+
+        <h3>2)样本缺少多样性</h3>
+        <p>​ 由于我们的样本大多来自于海洋捕捞船只上的摄像机。导致来自同一时间序列的图片具有很高的相似性。
+            比如下图展示的两张来自“LAG”的图片，他们就很相似。同样的情况也出现在其他种类的数据集，这就导致了我们在进行网络训练时有一点问题。</p>
+        <figure>
+            <img src="../img/xiangsi.jpg"> </img>
+        </figure>
+        <h3>3)种类模糊</h3>
+        <p>​ 一些种类，例如“ALB”，“BET”和“YFT”，彼此之间是非常相似的。即使我们肉眼看都很难辨别一些图片到底是属于哪个种类。就如下面这三张图片，人的肉眼
+            都无法分辨他们之间的区别。缺少训练数据只能让这个问题更难解决。</p>
+        <figure>
+            <img src="../img/ambiguous.jpg"> </img>
+        </figure>
+        <br/>
+
+        <h2><strong>First Attempt: Pretrained ConvNets on Full Image</strong></h2>
+        <p>
+            我们的第一个尝试是天真地将图像放入预训练的卷积神经网络中， 并继续在我们的数据集上运行梯度下降，这一过程被称为<strong>fine tuning</strong>。
+            这次比赛允许使用预先训练的模型， 所以在整个比赛中我们都大量使用预先训练的模型来进行目标检测和分类。
+            我们优化了几个不同的convnet模型，包括vgg-16/19、resnet-50/152、inception-v1、inception-v3/v4、。采用随机梯度下降法进行优化。
+            但是由于显卡现存的限制，我们并不能真正运行所有这些网络，最终我们选择inception-v3网络，并且在kaggle上获得了1.03和1.97的LOSS得分。
+        </p>
+        <figure>
+            <img src="../img/submit1.jpg"> </img>
+        </figure>
+        <p>
+            并且正如下图，我们的数据分析小组发现我们的网络在训练时并没有真正找到那些鱼的特征，而是受到了船只及背景的影响，然后这绝对不是进行分类的依据，这也证明了这种思路
+            是有很大漏洞的。正确的方法显然是先将鱼分割出来再进行分类识别。
+        </p>
+        <figure>
+            <img src="../img/vgg_cam.jpg" height="360" width="640"> </img>
+        </figure>
+
+        <h2><strong>Detection and Localization</strong></h2>
+        <p>​ 即使是凭借我们自己的分析，也可以得出结论：先进行Object
+            Detection(物体识别)，再进行Classification(分类)得出的结果一定会强于直接对全图进行Classification(分类)的结果，因为如果进行Object
+            Detection后，将识别出的鱼作为分类网络的输入，那么该网络只会提取鱼的特征；而如果将全图作为分类网络的输入，那么网络便会提取出所有的特征，很大的可能会将除了鱼之外的其他特征作为判别标准，从而导致结果下降。</p>
+
+        <p>​ 所以，为了进行Object Detection，我们需要训练一个可以对图片进行识别并生成Bounding Box的网络。而目前被广泛应用的Object Detection网络有Faster
+            R-CNN、YOLO等。王岩最开始尝试了使用Faster R-CNN网络进行预测，但是尝试了几天，配置环境以及运行demo都遇到了难点，没有找到解决办法，所以最终决定转为使用YOLO。</p>
+
+        <h3>YOLO(You Only Look Once)</h3>
+
+        <p>​ YOLO是一个因其简便性和速度快而著称的object detection模型。与Faster R-CNN的5-7 fps相比，YOLO可以达到45 fps。因此，YOLO尤其适合实时Object
+            Detection任务，例如流媒体上的物体检测。</p>
+
+        <p>​ YOLO首先将原始输入图像划分为N*N个方块区域，然后将其拟合到卷积神经网络，输出M组物体置信度得分以及Bounding Box坐标，其中M取决于N。整个模型都是端到端训练的。</p>
+
+        <figure>
+            <img src="../img/yolo.png"> </img>
+        </figure>
+
+        <p>​ 本次我们组使用了<strong>YOLO v3</strong>，这是YOLO的改进网络，在保证了速度的同时，提升了识别准确率，同时也提升了对小物体的识别成功率。
+            而具体实现方面，我组使用了darknet，这是一个比较小众的深度学习框架，但是其有着几个独有的优点：
+        </p>
+
+        <ul>
+            <li>易于安装：在makefile里面选择自己需要的附加项（cuda，cudnn，opencv等）直接make即可，几分钟完成安装；</li>
+            <li>没有任何依赖项：整个框架都用C语言进行编写，可以不依赖任何库，连opencv作者都编写了可以对其进行替代的函数；</li>
+            <li>结构明晰，源代码查看、修改方便：其框架的基础文件都在src文件夹，而定义的一些检测、分类函数则在example文件夹，可根据需要直接对源代码进行查看和修改；</li>
+            <li>友好python接口：虽然darknet使用c语言进行编写，但是也提供了python的接口，通过python函数，能够使用python直接对训练好的.weight格式的模型进行调用；</li>
+        </ul>
+
+        <p>具体来讲，我组首先从网上下载了原始训练数据的标注数据，即Bounding
+            Box的坐标信息等组成的.json文件；接下来，将.json文件做处理，生成darknet可以使用的对应格式的.txt标注数据；然后修改配置文件，由于我们决定将检测与分类作为两个阶段来进行处理，所以将检测只设置一类——鱼，这样在Object
+            Detection的时候，网络会将任意种类的鱼圈出Bounding Box，这样会提高网络的准确性，然后配置训练集、验证集和测试集的地址以及batch
+            size、CPU/GPU等各种训练参数。接下来我组迭代了10000次，并保存了每1000次的权重：</p>
+
+        <figure>
+            <img src="../img/wangyan.png" height="360" width="640"> </img>
+        </figure>
+        <p>通过测试，我们最终选择了7000次迭代生成的权重，测试结果如下：</p>
+
+        <figure>
+            <img src="../img/prediction7000.jpg" height="360" width="640"> </img>
+        </figure>
+
+        <p>我们运用该网络，将所有测试集13153张图片进行Object Detection，将最终结果保存到.txt文件中，然后将每张图片识别出的Bounding
+            Box的坐标读取并按其对原图进行剪裁，生成了只含有鱼的分类网络的输入：</p>
+
+        <figure>
+            <img src="../img/wangyan2.png" height="360" width="640"> </img>
+        </figure>
+        <p>至此，我们基本完成了Object Detection任务。</p>
+
+        <h2><strong>Performance Comparison</strong></h2>
+        <p>
+            我们采用了训练集增强，测试集增强等多种处理方法来增加我们的效果。采取不同的EPOCH，不同的训练权重训练出多个网络参数，并测试提交了很多次。
+            如下图，最终我们由于机器限制等一些原因，获得了0.98和1.78的得分。
+        </p>
+        <br/>
+        <figure>
+            <img src="../img/submit2.jpg"> </img>
+        </figure>
+        <br/>
+        <p>
+            首先我们在采用object detection这个方法后，由于我们网络的限制，只能对大概60%的训练集数据进行分割，导致我们分类出大量的NOF，结果也很差到了。
+            然后我们改进了网络结构，采用两种网络参数，分别对能分割的和不能分割的鱼采用不同的网络分类。结果也随之而提高了。
+        </p>
+        <p>
+            接着我们尝试了对训练集的增强和测试集的增强。但是出人意料的是对训练集增强后的网络反而在测试集有更差的表现，可能是出现了过拟合的情况。所以由于时间的限制
+            我们最终的采用的解决方案就是对测试机的增强。
+        </p>
+
+        <br/>
+        <h1><strong>The End</strong></h1>
+        <p>
+            最终我们的系统架构如下：
+        </p>
+        <figure>
+            <img src="../img/archi.png" height="360" width="640"> </img>
+        </figure>
+    </div>
+</div>
+
+
+<div id="foot">
+    <span>Copyright © GKXGKD 2019. All rights reserved.</span>
+</div>
+
+</body>
+</html>
